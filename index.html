@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- subscript meta -->
+    <meta
+      name="description"
+      content="프론트엔드, 시몬스 리뉴얼 개인 프로젝트, 프론트엔드 프로젝트, 웹 프로젝트, 홈페이지 코딩"
+    />
+    <meta
+      name="keywords"
+      content="프론트엔드, 시몬스 리뉴얼 개인 프로젝트, 프론트엔드 프로젝트, 웹 프로젝트, 홈페이지 코딩"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="김다빈 개인 웹 프로젝트트" />
+    <meta
+      property="og:description"
+      content="프론트엔드, 시몬스 리뉴얼 개인 프로젝트, 프론트엔드 프로젝트, 웹 프로젝트, 홈페이지 코딩"
+    />
+    <!--<meta property="og:image" content="http://www.areunpoolvilla.kr/html/img/gallery/main/1.jpg">
+	<meta property="og:url" content="http://www.areunpoolvilla.kr">
+	<link rel="canonical" href="http://www.areunpoolvilla.kr"> -->
+
+    <!--fontAwesome-->
+    <script
+      src="https://kit.fontawesome.com/664033e5f8.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/font.css" rel="stylesheet" />
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/swiper/swiper-bundle.min.js"></script>
+    <link href="js/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+    <!--scrollmagic cdn-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+
+    <!--GSAP cdn-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
+    <title>Website with video content</title>
+  </head>
+  <body>
+    <div id="wrap">
+      <!-- header s -->
+      <header class="hd" id="hd">
+        <div class="inner-con f">
+          <a class="logo" href="/">
+            <img src="/images/header_logo.png" alt="로고" />
+          </a>
+          <div class="hd-btn-wrap f">
+            <a class="cart reser_btn hd-reser en" href="/">Buy Now</a>
+            <button class="menu-btn">
+              <span class="line line1"></span>
+              <span class="line line2"></span>
+            </button>
+          </div>
+        </div>
+        <!-- gnb Menu -->
+        <nav class="main-menu-wrap gnb-menu">
+          <div class="inner-con">
+            <div class="menu-img-wrap">
+              <!-- <ul class="menu-img-box">
+                <li class="">
+                  <img src="img/gallery/menu/1.jpg" alt="풍경" />
+                </li>
+                <li class="on">
+                  <img src="img/gallery/menu/2.jpg" alt="객실" />
+                </li>
+                <li><img src="img/gallery/menu/3.jpg" alt="스페셜" /></li>
+                <li class="">
+                  <img src="img/gallery/menu/4.jpg" alt="투어" />
+                </li>
+                <li><img src="img/gallery/menu/5.jpg" alt="오시는길" /></li>
+                <li><img src="img/gallery/menu/6.jpg" alt="예약안내" /></li>
+              </ul> -->
+            </div>
+            <div class="menu-container">
+              <ul class="menu-wrap">
+                <li class="menu-list"><a>Beautyrest BLACK</a></li>
+                <li class="menu-list"><a>COLLECTION</a></li>
+                <li class="menu-list"><a>PRODUCT</a></li>
+                <li class="menu-list"><a>ONLINE STORE</a></li>
+                <li class="menu-list"><a>OUTLET</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <!-- header e -->
+
+      <!-- main s -->
+      <main class="main-wrap top-slide-wrap top-vdo-wrap">
+        <section class="sec-1 con1">
+          <figure class="swiper-wrapper main-slide-wrap">
+            <figure class="swiper-wrapper">
+              <div class="swiper-slide top-vdo">
+                <video
+                  preload=""
+                  tabindex="-1"
+                  loop=""
+                  autoplay
+                  height="100%"
+                  src="/video/main.mp4"
+                ></video>
+              </div>
+              <div
+                class="swiper-slide"
+                style="background-image: url(/images/2107_SIMMONS_AD.jpg)"
+              ></div>
+            </figure>
+            <div class="slide-control1">
+              <button class="prev">
+                <span class="line"><span class="line-eff"></span></span>
+                <span class="txt">Prev</span>
+              </button>
+              <button class="next">
+                <span class="line">
+                  <span class="line-eff"></span>
+                </span>
+                <span class="txt">Next</span>
+              </button>
+            </div>
+          </figure>
+        </section>
+
+        <section class="sec-2 con2">
+          <!-- Section1 s -->
+          <figure class="info-section">
+            <div class="bg-svg"></div>
+            <div class="inner-con">
+              <div class="m-vdo-wrap"></div>
+              <div class="txt-wrap">
+                <div class="tit">
+                  <div class="mask-title-box">
+                    <h2 class="scroll-obj maskUp on en">HERITAGE</h2>
+                  </div>
+                  <p class="scroll-obj fadeY on ko">
+                    편안하고 기품있는 침실문화의 시작, Since 1870
+                  </p>
+                </div>
+                <a href="" class="scroll-btn en">
+                  SCROLL
+                  <span class="line"><span class="move-line"></span></span>
+                </a>
+              </div>
+              <div class="main-thumb-container">
+                <div class="main-thumb-slide">
+                  <figure class="swiper-wrapper">
+                    <div
+                      class="swiper-slide"
+                      style="background-image: url(/images/heritage1.jpg)"
+                    ></div>
+                    <div
+                      class="swiper-slide"
+                      style="background-image: url(/images/heritage2.jpg)"
+                    ></div>
+                    <div
+                      class="swiper-slide"
+                      style="background-image: url(/images/heritage3.jpg)"
+                    ></div>
+                    <div
+                      class="swiper-slide"
+                      style="background-image: url(/images/heritage4.jpg)"
+                    ></div>
+                  </figure>
+                </div>
+                <div class="swiper-controller">
+                  <span class="prev btn">&lt;</span>
+                  <span class="line"></span>
+                  <span class="next btn">&gt;</span>
+                </div>
+              </div>
+            </div>
+            <div class="svg-line-bg">
+              <div class="line1 scroll-obj">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 1941.59 386.3"
+                >
+                  <g id="Layer_1-2" data-name="Layer 1">
+                    <path
+                      class="cls-1"
+                      d="M.39,52.86S98,172.86,550.72,32.72C959-93.67,1199.59,187.81,1345.39,257.61c125.33,60,317.33,201.33,596,81.33"
+                    />
+                  </g>
+                </svg>
+              </div>
+              <div class="line2 scroll-obj">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 2002.15 373.45"
+                >
+                  <g id="Layer_1-2" data-name="Layer 1">
+                    <path
+                      class="cls-1"
+                      d="M.35,39.65s120,114.67,532-5.33S1087,146.65,1234.6,219.41c97.38,48,337.75,188.24,525.75,145.57,227.54-51.64,241.33-89.33,241.33-89.33"
+                    />
+                  </g>
+                </svg>
+              </div>
+            </div>
+          </figure>
+          <!-- Section1 e -->
+          <!-- Section2 s -->
+          <figure class="intro-section">
+            <div class="inner-con">
+              <div class="img-wrap">
+                <img src="/images/section2.png" />
+              </div>
+              <div class="txt-wrap">
+                <div class="tit-wrap">
+                  <div class="white-tit tit">
+                    <h2 class="en">Built for Sleep</h2>
+                  </div>
+                  <div class="gray-tit tit">
+                    <h2 class="en">Built for Sleep</h2>
+                  </div>
+                </div>
+                <div class="txt">
+                  <p class="scroll-obj fadeY ko">
+                    세계 침대 시장에서 최고로 인정받는 자체 생산 시스템<br />
+                    청결함을 기본으로, 기본에 충실한 원칙을 고수하는<br />
+                    매트리스 제작 전 과정은 원자재 선정, 스프링 제작,최종 검수에
+                    이르기까지
+                  </p>
+                  <p class="scroll-obj fadeY ko">
+                    ‘ 한국 시몬스만의 1936가지 품질관리 항목’ 을 거쳐 제품을
+                    완성합니다
+                  </p>
+                </div>
+              </div>
+            </div>
+          </figure>
+          <!-- Section2 e -->
+          <!-- Section3 s -->
+          <figure class="room-preview-section scroll-target">
+            <div class="inner-con">
+              <div class="tit-wrap">
+                <h3 class="scroll-obj fadeY small">GOOD SLEEP & GOOD LIFE</h3>
+                <div class="mask-tit-box">
+                  <h2 class="scroll-obj maskUp en">Factorium & Terras</h2>
+                </div>
+              </div>
+              <div class="center-img">
+                <img src="images/sc-3.jpg" alt="" />
+              </div>
+              <div class="txt-wrap">
+                <div class="img img1">
+                  <div class="img-mask scroll-obj">
+                    <img src="images/Lato-lookbook3.png" alt="" />
+                  </div>
+                </div>
+                <div class="img img2">
+                  <div class="img-mask scroll-obj">
+                    <img src="images/mask.jpg" alt="" />
+                    <video
+                      style="
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        transform: scale(1.2);
+                      "
+                      autoplay
+                      loop muted
+                      src="/video/advanced.mp4"
+                     
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </figure>
+          <!-- Section3 e -->
+          <!-- Section4 s -->
+          <figure class="special-preview-section">
+            <div class="inner-con inner-1400">
+              <div class="tit-wrap">
+                <h3 class="scroll-obj fadeY small">ADVANCE & CHALLENGE</h3>
+                <div class="mask-tit-box">
+                  <h2 class="scroll-obj maskUp en">SIMMONS Product</h2>
+                </div>
+              </div>
+              <div class="special-preview-slide">
+                <figure class="swiper-wrapper">
+                  <div
+                    class="swiper-slide"
+                    style="background-image: url(images/product1.jpg)"
+                  >
+                    <a href="/"></a>
+                  </div>
+                  <div
+                    class="swiper-slide"
+                    style="background-image: url(images/product2.jpg)"
+                  >
+                    <a href="/"></a>
+                  </div>
+                  <div
+                    class="swiper-slide"
+                    style="background-image: url(images/product3.jpg)"
+                  >
+                    <a href="/"></a>
+                  </div>
+                  <div
+                    class="swiper-slide"
+                    style="background-image: url(images/product4.jpg)"
+                  >
+                    <a href="/"></a>
+                  </div>
+                  <div
+                    class="swiper-slide"
+                    style="background-image: url(images/product5.jpg)"
+                  >
+                    <a href="/"></a>
+                  </div>
+                </figure>
+              </div>
+              <div class="line"><span class="center-line"></span></div>
+            </div>
+          </figure>
+          <!-- Section4 e -->
+        </section>
+      </main>
+      <!-- main e -->
+
+      <!-- footer s -->
+      <footer>
+        <div class="inner-con">
+          <div class="footer-wrap">
+            <img src="images/footer_logo.png" alt="하단로고이미지" />
+            <div class="txt">
+              <p style="font-family: 'BlackMango-Medium';">
+                (주)시몬스 │ 주소: 경기도 이천시 모가면 사실로 1000<br />
+                <span>Contact to : hobak0278@gmail.com</span><br /><br />
+                고객님은 안전거래를 위해 현금 등으로 결제 시 모든 금액에 대하여
+                <br />
+                본 쇼핑몰에서 가입한 구매안전서비스 소비자피해보상보험 서비스를
+                이용하실 수 있습니다.<br />
+                Copyright©by KIMDABEEN, Co., Ltd All Rights Reserved.
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- footer e -->
+    </div>
+
+    <script src="js/common.js"></script>
+    <script src="js/frontJS.js"></script>
+  </body>
+</html>
